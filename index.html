@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método Gauss-Seidel</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Método Gauss-Seidel</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre o método</a></li>
+          <li><a href="#example">Exemplo</a></li>
+          <li><a href="#calculator">Calculadora</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>Sobre o método</h2>
+        <p>O método Gauss-Seidel é um método iterativo utilizado para resolver sistemas de equações lineares. Ele é uma extensão do método de Jacobi e é mais eficiente para sistemas em que a matriz dos coeficientes é diagonalmente dominante.</p>
+        <p>Em outras palavras, o método Gauss-Seidel é como um jogo de adivinhação em que você tenta adivinhar o valor de cada variável em um sistema de equações lineares. Você começa com uma estimativa inicial para as variáveis e, em seguida, atualiza as estimativas por meio de uma sequência de iterações. Em cada iteração, você utiliza as estimativas anteriores para calcular novas estimativas para as variáveis.</p>
+        <p>Se você já jogou o jogo "Quem é Quem?", em que você tenta adivinhar a pessoa escolhida pelo seu oponente fazendo perguntas, pode pensar no método Gauss-Seidel como uma versão matemática desse jogo. Você faz uma estimativa inicial para cada variável, como "x<sub>1</sub> = 0" e "x<sub>2</sub> = 0", e, em seguida, faz perguntas para atualizar suas estimativas, como "Se 2x<sub>1</sub> + x<sub>2</sub> = 11 e x<sub>1</sub> = 0, qual é o valor de x<sub>2</sub>?"</p>
+        <p>O método Gauss-Seidel é utilizado em diversas áreas da matemática e da engenharia, como na resolução de sistemas de equações diferenciais parciais e na análise de circuitos elétricos.</p>
+      </section>
+      <section id="example">
+        <h2>Exemplo</h2>
+        <p>Considere o seguinte sistema de equações lineares:</p>
+        <p>2x<sub>1</sub> + x<sub>2</sub> = 11</p>
+        <p>5x<sub>1</sub> + 7x<sub>2</sub> = 13</p>
+        <p>Podemos utilizar o método Gauss-Seidel para encontrar a solução desse sistema. Começamos com uma estimativa inicial para as variáveis, por exemplo, x<sub>1</sub> = 0 e x<sub>2</sub> = 0. Em seguida, atualizamos as estimativas por meio de uma sequência de iterações.</p>
+        <p>Na primeira iteração, podemos utilizar as estimativas iniciais para calcular novas estimativas para x<sub>1</sub> e x<sub>2</sub>:</p>
+        <p>x<sub>1</sub> = (11 - x<sub>2</sub>) / 2</p>
+        <p>x<sub>2</sub> = (13 - 5x<sub>1</sub>) / 7</p>
+        <p>Podemos repetir esse processo até que as estimativas converjam para uma solução satisfatória.</p>
+      </section>
+      <section id="calculator">
+        <h2>Calculadora</h2>
+        <p>Utilize a calculadora abaixo para resolver sistemas de equações lineares utilizando o método Gauss-Seidel. Comece inserindo os coeficientes das equações e o termo independente em cada campo de entrada. Em seguida, clique no botão "Calcular" para obter a solução do sistema.</p>
+        <form>
+          <div id="equations">
+            <div class="equation">
+              <label for="a11">a11:</label>
+              <input type="number" class="a" name="a11" value="2">
+              <label for="a12">a12:</label>
+              <input type="number" class="a" name="a12" value="1">
+              <label for="b1">b1:</label>
+              <input type="number" class="b" name="b1" value="11">
+            </div>
+            <div class="equation">
+              <label for="a21">a21:</label>
+              <input type="number" class="a" name="a21" value="5">
+              <label for="a22">a22:</label>
+              <input type="number" class="a" name="a22" value="7">
+              <label for="b2">b2:</label>
+              <input type="number" class="b" name="b2" value="13">
+            </div>
+          </div>
+          <button type="button" onclick="addEquation()">Adicionar equação</button>
+          <br>
+          <label for="x1">x1:</label>
+          <input type="number" id="x1" name="x1" value="0">
+          <label for="x2">x2:</label>
+          <input type="number" id="x2" name="x2" value="0">
+          <button type="button" onclick="gaussSeidel()">Calcular</button>
+        </form>
+      </section>
+    </main>
+
+    <video autoplay muted loop id="video-background">
+        <source src="/src/nightcity.mp4" type="video/mp4">
+    </video>
+
+    <footer>
+        <p>Este site foi criado por José P. e é destinado para um trabalho de Álgebra Linear da faculdade.</p>
+        <img src="/src/ufralogo.png" alt="UFRA Logo" width="100">
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

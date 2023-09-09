@@ -1,0 +1,332 @@
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: -1;
+    object-fit: fill; 
+}
+
+
+
+/* Estilo do cabeçalho */
+header {
+    background: linear-gradient(to right, #001f3f, #111111);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Orbitron", sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(0, 255, 21, 0.8);
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff00;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0ff;
+}
+
+/* Estilo das seções */
+main {
+    padding: 40px;
+}
+
+section {
+    background-color: rgba(30, 30, 30, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px); 
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00ff00;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.5);
+    font-family: "Arial", sans-serif; 
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Estilo da calculadora */
+.equation {
+    margin-bottom: 10px;
+}
+
+.equation label {
+    color: #00ff00;
+    font-size: 1.1rem;
+}
+
+.equation input {
+    width: 50px;
+    background-color: #1e1e1e;
+    border: none;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, hsl(128, 100%, 41%) 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00eeff;
+ outline: transparent;
+ position: relative;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #01ff16 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+}
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+
+/* Estilo das mensagens de erro/sucesso */
+.message {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.success {
+    color: #00ff00;
+}
+
+#calculator {
+    background-color: rgba(30, 30, 30, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
+}
+
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    /* Estilos da calculadora para telas menores */
+    .equation input {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para o rodapé com uma estética cyberpunk */
+footer {
+    background: linear-gradient(to right, #001f3f, #111111);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/src/cyberpunk-pattern.jpg');
+    opacity: 0.1; 
+    z-index: 1;
+}
+
+footer p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 255, 76, 0.8);
+}
+
+footer img {
+    margin-right: 10px;
+    padding-bottom: 1.2rem;
+    padding-left: 1rem;
+}
+
+/* Efeito de brilho intermitente para o texto */
+@keyframes glow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 255, 76, 0.8);
+    }
+    50% {
+        text-shadow: 2px 2px 4px rgba(0, 255, 76, 0.8), 0 0 10px rgba(0, 255, 76, 0.8);
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 255, 76, 0.8);
+    }
+}
+
+footer p:hover {
+    animation: glow 1s infinite;
+}
+
+
+
+
