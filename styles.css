@@ -106,6 +106,53 @@ p {
     font-size: 1rem;
 }
 
+.solution {
+    margin-top: 10px;
+}
+
+.solution label {
+    color: #00ff00;
+    font-size: 1.1rem;
+}
+
+.solution input {
+    width: 50px;
+    background-color: #1e1e1e;
+    border: none;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+
+
+/* Estilo das mensagens de erro/sucesso */
+.message {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.error {
+    color: #ff0000;
+}
+
+.success {
+    color: #00ff00;
+}
+
+#calculator {
+    background-color: rgba(30, 30, 30, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
+}
+
+
 button,
 button::after {
  padding: 16px 20px;
@@ -201,30 +248,6 @@ button:hover::after {
  }
 }
 
-
-/* Estilo das mensagens de erro/sucesso */
-.message {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    display: none;
-}
-
-.error {
-    color: #ff0000;
-}
-
-.success {
-    color: #00ff00;
-}
-
-#calculator {
-    background-color: rgba(30, 30, 30, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
-}
 
 
 /* Estilos para telas menores */
