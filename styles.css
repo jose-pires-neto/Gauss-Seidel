@@ -60,7 +60,7 @@ nav ul li a:hover {
 
 /* Estilo das seções */
 main {
-    padding: 40px;
+    padding: 4rem;
 }
 
 section {
@@ -151,7 +151,6 @@ p {
     backdrop-filter: blur(10px); 
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); 
 }
-
 
 button,
 button::after {
@@ -258,6 +257,10 @@ button:hover::after {
 
     h1 {
         font-size: 2rem;
+    }
+
+    main {
+        padding: 1rem;
     }
 
     nav ul li {
