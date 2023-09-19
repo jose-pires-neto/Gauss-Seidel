@@ -34,9 +34,9 @@ A calculadora interativa incorporada permite que os usuários insiram os coefici
 
 Este site foi criado por:
 
-- José P.
-- Erick S.
-- Thiago A.
+- José Pires
+- Erick Sábio
+- Thiago Alan
 - Elivanilso Jr
 
 ## Recursos
