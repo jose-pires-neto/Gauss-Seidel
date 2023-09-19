@@ -3,8 +3,9 @@
 ![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-brightgreen.svg)
 ![HTML](https://img.shields.io/badge/HTML-5-orange.svg)
 ![CSS](https://img.shields.io/badge/CSS-3-blue.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow.svg)
 
-Este repositório contém o código-fonte de um site informativo sobre o Método Gauss-Seidel e uma calculadora interativa para resolver sistemas de equações lineares utilizando esse método. O site foi desenvolvido como parte de um seminário de Álgebra Linear e pode ser acessado [aqui](https://example.com).
+Este repositório contém o código-fonte de um site informativo sobre o Método Gauss-Seidel e uma calculadora interativa para resolver sistemas de equações lineares utilizando esse método. O site foi desenvolvido como parte de um seminário de Álgebra Linear da Universidade Federal Rural da Amazonia.
 
 ## Sobre o Método
 
