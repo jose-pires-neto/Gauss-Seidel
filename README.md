@@ -41,7 +41,7 @@ Este site foi criado por:
 
 ## Recursos
 
-O site incorpora um vídeo de plano de fundo e utiliza o logotipo da UFRA (Universidade Federal Rural da Amazônia) como parte de sua identidade visual.
+O site incorpora um vídeo de plano de fundo de uma cidade Cyberpunk e utiliza o logotipo da UFRA (Universidade Federal Rural da Amazônia) no footer como parte de sua identidade visual.
 
 ## Contribuições
 
